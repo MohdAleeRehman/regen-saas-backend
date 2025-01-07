@@ -12,6 +12,7 @@ const ChannelSchema = new mongoose.Schema({
   ],
   quota: { type: Number, default: 1000 }, // Total quota
   quotaUsed: { type: Number, default: 0 }, // Used quota
+  vendors: [{ type: String }],
   status: { type: String, default: "Offline" }, // Online/Offline
 });
 
